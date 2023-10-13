@@ -1,0 +1,29 @@
+{
+  "name": "wl-explorer-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "local": "APP_ENV=local yarn playwright test",
+    "dev": "APP_ENV=development yarn playwright test",
+    "stage": "APP_ENV=staging yarn playwright test",
+    "prod": "APP_ENV=production yarn playwright test",
+    "custom": "APP_ENV=custom yarn playwright test",
+    "report": "yarn playwright show-report",
+    "codegen:dev": "yarn playwright codegen https://wl-explorer-fe-dev.wellnessliving.com"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "@types/node": "^20.6.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "packageManager": "yarn@3.6.4"
+}

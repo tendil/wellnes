@@ -1,0 +1,14 @@
+scripts/.env
+.idea/
+node_modules/
+test-results/
+playwright-report/
+playwright/.cache/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+tests/**/*.png
